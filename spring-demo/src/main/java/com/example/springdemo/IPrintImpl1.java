@@ -5,11 +5,10 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-@Primary
-@Qualifier("impl1")
-public class IPrintImpl implements IPrint {
+@Qualifier("impl2")
+public class IPrintImpl1 implements IPrint {
     @Override
     public String printStartup() {
-        return "Hello World";
+        return "GoodBye World";
     }
 }

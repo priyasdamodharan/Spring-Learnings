@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 
     @Autowired
-    Manager manager;
+    managerOne managerOne; //Field level Injection
 
     @GetMapping("/demo")
     public String demo(){
-        return manager.print();
+        return managerOne.print();
     }
 }
